@@ -1,0 +1,19 @@
+/* 
+teclas operações black #131313
+teclas numericas #060606
+fundo grey #1f1f1f
+blue #134369
+*/
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#calculator {
+    left:550px
+
+}
+
+
+

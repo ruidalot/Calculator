@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(58, 51, 51);
+    font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+#calculator {
+    left:550px;
+    background-color: saddlebrown;
+    
+
+}
+
+
+#modeDayNight {
+    color: orangered;
+}
+
+table {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #34615b;
+    border: 2px solid black;
+    
+    
+}
+td {
+    
+    cursor: pointer;
+    text-align: center;
+    padding: 22px;
+    margin: 12px 4px;
+    color: rgb(31, 18, 9);
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 24px;
+    border-radius: 6px 4px;    
+}
+
+td:hover {
+    background-color: rgb(166, 230, 252) ;
+}
+
+.equal {
+    background-color: rgba(21, 34, 29, 0.8);
+    color: rgb(235, 224, 205);
+}
+    .equal:hover {
+        background-color: rgba(61, 66, 65, 0.959);
+    }
+    
+.numericals {
+   background-color: rgb(143, 123, 79);
+}
+
+.func {
+    background-color: #a1954c;
+    
+}
+
+.miniDisplay {
+    height: 22px;
+    text-align: center;
+    background-color: rgb(59, 53, 53);
+    font-family: monospace;
+    font-size: 12px;
+    color: wheat;
+}
+
+    .miniDisplay:hover {
+       background-color:  rgb(184, 168, 116);
+    }
+
+.display {
+    height: 40px;
+    text-align: right;
+    background-color: rgb(59, 53, 53);
+    color: wheat;
+    font-family: monospace;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.display:hover {
+    background-color: rgb(184, 168, 116);
+}
+
+.calc{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+}

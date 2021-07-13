@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link id="modeChange" rel="stylesheet" href="styles/white.css">
+    <link rel="stylesheet" href="styles/change.css">
+    <link href="calculadora.css" rel="stylesheet" />
+    <script src="calculadora.js" text="text/javascript"></script>
+    <title>Calculadora</title>
+</head>
+    <body onload="insert()">    
+        <table id="calculator">
+            <tr>
+                <td class="calc" colspan="4">Calculadora</td>
+            </tr>
+            <tr>
+                <tr>
+                    <td id="miniDisplay" class="miniDisplay" colspan="4"></td>           
+                </tr>
+                <td id="display" class="display" colspan="4"></td>
+            </tr>
+            <tr>
+                
+                <td colspan="2" class="func" onclick="cc_clearAll()">C</td>                
+                <td colspan="2" class="func" onclick="cc_clearOne()">&larr;</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"  class="func" onclick="cc_clearCe()">CE</button></td>
+                <td colspan="2" class="func" onclick="cc_insertOperation('/')" value="/" >&#247;</td>
+            </tr>
+            <tr >
+                <td class="numericals" onclick="cc_insert('7')">7</td>
+                <td class="numericals" onclick="cc_insert('8')">8</td>
+                <td class="numericals" onclick="cc_insert('9')">9</td>                
+                <td class="func" onclick="cc_insertOperation('*')">&times;</td>                
+                
+            </tr>
+            <tr >
+                <td onclick="cc_insert('4')" class="numericals">4</td>
+                <td onclick="cc_insert('5')" class="numericals">5</td>
+                <td onclick="cc_insert('6')" class="numericals">6</td>
+                <td onclick="cc_insertOperation('-')" class="func">&minus;</td>
+            </tr>
+            <tr >
+                <td onclick="cc_insert('1')" class="numericals">1</td>
+                <td onclick="cc_insert('2')" class="numericals">2</td>
+                <td onclick="cc_insert('3')" class="numericals">3</td>
+                <td onclick="cc_insertOperation('+')" class="func">&plus;</td>
+            </tr>
+            <tr>
+                <td onclick="cc_insertPositiveNegative()" class="numericals">&plusmn;</td>
+                <td onclick="cc_insert('0')" class="numericals">0</td>
+                <td onclick="cc_insert('.')" class="numericals">.</td>
+                <td onclick="cc_equal()" class="equal">&equals;</td>
+            </tr>
+        </table>
+            
+        <div style="margin-left: 200px;">
+            <tr>
+                <td>
+                    <label class="change">
+                        <input type="checkbox" onclick="changeMode()">
+                        <span class="slider round"></span> 
+                    </label>
+                </td>
+                <td>
+                    <div id="modeDayNight">Day Mode</div>
+                </td>
+            </tr>
+        </div>
+          
+    </body>
+</html>
